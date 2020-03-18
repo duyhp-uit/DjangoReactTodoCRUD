@@ -8,12 +8,12 @@ class TodoForm extends Component {
             <label>{label}</label>
             <input {...input} autoComplete='off' />
             {touched && error && (
-              <span className='ui pointing red basic label'>{error}</span>
+				<span className='ui pointing red basic label'>{error}</span>
             )}
           </div>
         );
 	};
-
+//test-rebase
     onSubmit = formValues => {
         this.props.onSubmit(formValues);
     }
